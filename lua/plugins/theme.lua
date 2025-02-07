@@ -98,7 +98,7 @@ end
         vim.cmd('colorscheme gruber-darker')
 		NoBackground()
     end
-}-]]
+}--]]
 
 --[[return {
     "rebelot/kanagawa.nvim",

@@ -13,7 +13,7 @@ return {
 		},
         config = function()
             require("mason-lspconfig").setup({
-                ensure_installed = { "lua_ls", "rust_analyzer", "ts_ls", "pyright", "cssls", "html", "clangd", "csharp_ls", "gopls", "zls", "jdtls" },
+                ensure_installed = { "lua_ls", "rust_analyzer", "ts_ls", "pyright", "cssls", "html", "clangd", "csharp_ls", "gopls", "zls", "jdtls", "julials" },
             })
         end
     },
@@ -34,6 +34,7 @@ return {
             lspconfig.gopls.setup({ capabilities = capabilities })
             lspconfig.jdtls.setup({ capabilities = capabilities })
             lspconfig.zls.setup({ capabilities = capabilities })
+            lspconfig.julials.setup({ capabilities = capabilities })
 
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})

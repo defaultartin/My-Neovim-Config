@@ -21,7 +21,7 @@ vim.opt.incsearch = true
 vim.opt.scrolloff = 6
 
 --vim.cmd('set guicursor="disable"')
-vim.cmd("set guicursor=n-c:hor100,v-sm:block,i-ci-ve:ver25-Cursor,r-cr-o:hor20")
+--vim.cmd("set guicursor=n-c:hor100,v-sm:block,i-ci-ve:ver25-Cursor,r-cr-o:hor20")
 
 vim.g.mapleader = " "
 -- Navigate vim panes better

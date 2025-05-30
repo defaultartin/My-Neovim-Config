@@ -40,6 +40,7 @@ return {
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})
             vim.keymap.set('n', 'gr', vim.lsp.buf.references, {})
             vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, {})
+            vim.keymap.set('n', 'E', vim.diagnostic.open_float, {})
             vim.keymap.set({ 'n', 'v' }, '<leader>ca', vim.lsp.buf.code_action, {})
         end
     }

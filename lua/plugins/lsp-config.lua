@@ -9,7 +9,7 @@ return {
         "williamboman/mason-lspconfig.nvim",
 		lazy = false,
 		opts = {
-			auto_install = true,
+			-- auto_install = true,
 		},
         config = function()
             require("mason-lspconfig").setup({
@@ -22,19 +22,18 @@ return {
         config = function()
             local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-            local lspconfig = require("lspconfig")
-            lspconfig.lua_ls.setup({ capabilities = capabilities })
-            lspconfig.rust_analyzer.setup({ capabilities = capabilities })
-            lspconfig.ts_ls.setup({ capabilities = capabilities })
-            lspconfig.pyright.setup({ capabilities = capabilities })
-            lspconfig.cssls.setup({ capabilities = capabilities })
-            lspconfig.html.setup({ capabilities = capabilities })
-            lspconfig.clangd.setup({ capabilities = capabilities })
-            lspconfig.csharp_ls.setup({ capabilities = capabilities })
-            lspconfig.gopls.setup({ capabilities = capabilities })
-            lspconfig.jdtls.setup({ capabilities = capabilities })
-            lspconfig.zls.setup({ capabilities = capabilities })
-            lspconfig.julials.setup({ capabilities = capabilities })
+            vim.lsp.config('lua_ls', { capabilities = capabilities })
+            vim.lsp.config('rust_analyzer', { capabilities = capabilities })
+            vim.lsp.config('ts_ls', { capabilities = capabilities })
+            vim.lsp.config('pyright', { capabilities = capabilities })
+            vim.lsp.config('cssls', { capabilities = capabilities })
+            vim.lsp.config('html', { capabilities = capabilities })
+            vim.lsp.config('clangd', { capabilities = capabilities })
+            vim.lsp.config('csharp_ls', { capabilities = capabilities })
+            vim.lsp.config('gopls', { capabilities = capabilities })
+            vim.lsp.config('jdtls', { capabilities = capabilities })
+            vim.lsp.config('zls', { capabilities = capabilities })
+            vim.lsp.config('julials', { capabilities = capabilities })
 
             vim.keymap.set('n', 'K', vim.lsp.buf.hover, {})
             vim.keymap.set('n', 'gd', vim.lsp.buf.definition, {})

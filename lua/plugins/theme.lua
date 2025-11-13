@@ -110,7 +110,7 @@ end
     end
 }--]]
 
-return {
+--[[return {
     "Shatur/neovim-ayu",
     name = "ayu",
     priority = 1000,
@@ -118,7 +118,7 @@ return {
         vim.cmd('colorscheme ayu')
 		NoBackground()
     end
-}
+}--]]
 
 --[[return {
     "vague2k/vague.nvim",
@@ -130,7 +130,7 @@ return {
     end
 }--]]
 
---[[return {
+return {
     "datsfilipe/vesper.nvim",
     name = "vesper",
     priority = 1000,
@@ -138,4 +138,4 @@ return {
         vim.cmd('colorscheme vesper')
 		NoBackground()
     end
-}--]]
+}
